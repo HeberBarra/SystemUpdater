@@ -2,6 +2,7 @@
 
 #include <memory>
 #include "updater_factory.hpp"
+#include "rustup_updater.hpp"
 #include "updater.hpp"
 #include "flatpak_updater.hpp"
 #include "lazy_neovim_updater.hpp"
@@ -18,6 +19,9 @@ std::unique_ptr<Updater> UpdaterFactory::createUpdater(
             break;
         case LAZY_NEOVIM:
             updater = std::unique_ptr<Updater>(new LazyNeovimUpdater());
+            break;
+        case RUSTUP:
+            updater = std::unique_ptr<Updater>(new RustupUpdater());
             break;
         case ZYPPPER:
             updater = std::unique_ptr<Updater>(new ZypperUpdater());
