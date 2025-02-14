@@ -1,11 +1,14 @@
 // Copyright 2025 <Heber Ferreira Barra>
 
-#include "neovim_updater.hpp"
+#include <memory>
+#include "updater.hpp"
+#include "updater_factory.hpp"
 
 int main() {
-  NeovimUpdater updater;
+    UpdaterFactory updaterFactory;
+    std::unique_ptr<Updater> updater = updaterFactory.createUpdater(ZYPPPER);
 
-  updater.update();
+    updater->update();
 
-  return 0;
+    return 0;
 }
