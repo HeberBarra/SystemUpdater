@@ -4,11 +4,18 @@
 #include "updater.hpp"
 #include "updater_factory.hpp"
 
+void runAllModules(UpdaterFactory updaterFactory) {
+    std::unique_ptr<Updater> updater;
+    for (int value = DUMMY + 1; value != DUMMY_LAST; value++) {
+        UpdatersNames enumValue = static_cast<UpdatersNames>(value);
+        updater = updaterFactory.createUpdater(enumValue);
+        updater->update();
+    }
+}
+
 int main() {
     UpdaterFactory updaterFactory;
-    std::unique_ptr<Updater> updater = updaterFactory.createUpdater(ZYPPPER);
-
-    updater->update();
+    runAllModules(updaterFactory);
 
     return 0;
 }

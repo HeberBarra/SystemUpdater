@@ -22,6 +22,9 @@ std::unique_ptr<Updater> UpdaterFactory::createUpdater(
         case ZYPPPER:
             updater = std::unique_ptr<Updater>(new ZypperUpdater());
             break;
+        case DUMMY:
+        case DUMMY_LAST:
+            break;
     }
 
     return updater;

@@ -6,9 +6,11 @@
 #include <memory>
 
 enum UpdatersNames {
+    DUMMY,
     FLATPAK,
     LAZY_NEOVIM,
-    ZYPPPER
+    ZYPPPER,
+    DUMMY_LAST,
 };
 
 class UpdaterFactory {
