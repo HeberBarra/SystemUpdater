@@ -1,6 +1,6 @@
 // Copyright 2025 <Heber Ferreira Barra>
 
-#include "zypper_updater.hpp"
+#include "../../headers/updaters/zypper_updater.hpp"
 #include <cstdlib>
 
 void ZypperUpdater::update() {

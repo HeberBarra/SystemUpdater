@@ -1,5 +1,5 @@
 // Copyright 2025 <Heber Ferreira Barra>
-#include "flatpak_updater.hpp"
+#include "../../headers/updaters/flatpak_updater.hpp"
 #include <cstdlib>
 
 void FlatpakUpdater::update() {

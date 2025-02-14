@@ -1,8 +1,8 @@
 // Copyright 2025 <Heber Ferreira Barra>
 
 #include <memory>
-#include "updater.hpp"
-#include "updater_factory.hpp"
+#include "../headers/updater.hpp"
+#include "../headers/updater_factory.hpp"
 
 void runAllModules(UpdaterFactory updaterFactory) {
     std::unique_ptr<Updater> updater;
