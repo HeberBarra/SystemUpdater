@@ -19,5 +19,5 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
 	$(COMPILER) -o $@ $< $(COMPILER_FLAGS)
 
 clean:
-	rm -r build $(PROJECT_NAME) || true
+	rm -r $(BUILD_DIR) $(PROJECT_NAME) || true
 
