@@ -1,6 +1,6 @@
 // Copyright 2025 <Heber Ferreira Barra>
-#ifndef SRC_UPDATERS_ZYPPER_UPDATER_HPP_
-#define SRC_UPDATERS_ZYPPER_UPDATER_HPP_
+#ifndef HEADERS_UPDATERS_ZYPPER_UPDATER_HPP_
+#define HEADERS_UPDATERS_ZYPPER_UPDATER_HPP_
 #include "../updater.hpp"
 
 class ZypperUpdater : public Updater {
@@ -9,4 +9,4 @@ class ZypperUpdater : public Updater {
     ~ZypperUpdater() {}
 };
 
-#endif  // SRC_UPDATERS_ZYPPER_UPDATER_HPP_
+#endif  // HEADERS_UPDATERS_ZYPPER_UPDATER_HPP_

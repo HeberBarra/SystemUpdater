@@ -1,6 +1,6 @@
 // Copyright 2025 <Heber Ferreira Barra>
-#ifndef SRC_UPDATERS_RUSTUP_UPDATER_HPP_
-#define SRC_UPDATERS_RUSTUP_UPDATER_HPP_
+#ifndef HEADERS_UPDATERS_RUSTUP_UPDATER_HPP_
+#define HEADERS_UPDATERS_RUSTUP_UPDATER_HPP_
 #include "../updater.hpp"
 
 class RustupUpdater : public Updater {
@@ -9,5 +9,5 @@ class RustupUpdater : public Updater {
     ~RustupUpdater() {}
 };
 
-#endif  // SRC_UPDATERS_RUSTUP_UPDATER_HPP_
+#endif  // HEADERS_UPDATERS_RUSTUP_UPDATER_HPP_
 

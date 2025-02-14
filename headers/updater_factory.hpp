@@ -1,6 +1,6 @@
 // Copyright 2025 <Heber Ferreira Barra>
-#ifndef SRC_UPDATER_FACTORY_HPP_
-#define SRC_UPDATER_FACTORY_HPP_
+#ifndef HEADERS_UPDATER_FACTORY_HPP_
+#define HEADERS_UPDATER_FACTORY_HPP_
 
 #include "updater.hpp"
 #include <memory>
@@ -22,5 +22,5 @@ class UpdaterFactory {
     std::unique_ptr<Updater> createUpdater(UpdatersNames updaterName);
 };
 
-#endif  // SRC_UPDATER_FACTORY_HPP_
+#endif  // HEADERS_UPDATER_FACTORY_HPP_
 

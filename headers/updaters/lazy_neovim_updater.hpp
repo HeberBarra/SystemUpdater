@@ -1,6 +1,6 @@
 // Copyright 2025 <Heber Ferreira Barra>
-#ifndef SRC_UPDATERS_LAZY_NEOVIM_UPDATER_HPP_
-#define SRC_UPDATERS_LAZY_NEOVIM_UPDATER_HPP_
+#ifndef HEADERS_UPDATERS_LAZY_NEOVIM_UPDATER_HPP_
+#define HEADERS_UPDATERS_LAZY_NEOVIM_UPDATER_HPP_
 #include "../updater.hpp"
 
 class LazyNeovimUpdater : public Updater {
@@ -9,4 +9,4 @@ class LazyNeovimUpdater : public Updater {
     ~LazyNeovimUpdater(){}
 };
 
-#endif  // SRC_UPDATERS_LAZY_NEOVIM_UPDATER_HPP_
+#endif  // HEADERS_UPDATERS_LAZY_NEOVIM_UPDATER_HPP_
