@@ -18,6 +18,7 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
 	mkdir -p $(BUILD_DIR)
 	$(COMPILER) -o $@ $< $(COMPILER_FLAGS)
 
+.PHONY: clean
 clean:
 	rm -r $(BUILD_DIR) $(PROJECT_NAME) || true
 
