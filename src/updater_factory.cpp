@@ -2,11 +2,11 @@
 
 #include <memory>
 #include "updater_factory.hpp"
-#include "rustup_updater.hpp"
 #include "updater.hpp"
-#include "flatpak_updater.hpp"
-#include "lazy_neovim_updater.hpp"
-#include "zypper_updater.hpp"
+#include "updaters/flatpak_updater.hpp"
+#include "updaters/lazy_neovim_updater.hpp"
+#include "updaters/rustup_updater.hpp"
+#include "updaters/zypper_updater.hpp"
 
 std::unique_ptr<Updater> UpdaterFactory::createUpdater(
         UpdatersNames updaterName
