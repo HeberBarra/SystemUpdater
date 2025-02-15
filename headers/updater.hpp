@@ -4,6 +4,7 @@
 class Updater {
  public:
     virtual void update() = 0;
+    virtual void checkAvaliableUpdates() = 0;
     virtual ~Updater(){}
 };
 #endif  // HEADERS_UPDATER_HPP_

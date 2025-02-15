@@ -5,3 +5,8 @@
 void LazyNeovimUpdater::update() {
     system("nvim --headless \"+Lazy! update\" +qa");
 }
+
+void LazyNeovimUpdater::checkAvaliableUpdates() {
+    system("nvim --headless \"+Lazy! check\" +qa");
+}
+

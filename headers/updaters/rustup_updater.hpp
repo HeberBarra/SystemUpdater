@@ -6,6 +6,7 @@
 class RustupUpdater : public Updater {
  public:
     void update();
+    void checkAvaliableUpdates();
     ~RustupUpdater() {}
 };
 

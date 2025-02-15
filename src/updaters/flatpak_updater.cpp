@@ -6,3 +6,7 @@ void FlatpakUpdater::update() {
     system("sudo flatpak update");
 }
 
+void FlatpakUpdater::checkAvaliableUpdates() {
+    system("flatpak remote-ls --updates");
+}
+

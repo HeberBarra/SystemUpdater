@@ -7,3 +7,7 @@ void ZypperUpdater::update() {
     system("sudo zypper dup");
 }
 
+void ZypperUpdater::checkAvaliableUpdates() {
+    system("zypper list-updates -a");
+}
+

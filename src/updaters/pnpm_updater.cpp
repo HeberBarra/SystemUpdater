@@ -6,3 +6,7 @@ void PnpmUpdater::update() {
     system("pnpm update");
 }
 
+void PnpmUpdater::checkAvaliableUpdates() {
+    system("pnpm outdated");
+}
+

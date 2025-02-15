@@ -9,7 +9,7 @@ A C++ Program for helping me update my system. Fell free to customize to your ow
 ## Planned features:
 
 - [ ] Auto Confirm
-- [ ] Fetch updates
+- [x] Fetch updates
 - [ ] Module system
 
 ## License:
