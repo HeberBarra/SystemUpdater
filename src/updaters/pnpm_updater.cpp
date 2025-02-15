@@ -3,6 +3,7 @@
 #include <cstdlib>
 
 void PnpmUpdater::update() {
+    system("pnpm self-update");
     system("pnpm update");
 }
 
