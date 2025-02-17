@@ -5,6 +5,7 @@
 #include "../headers/updater.hpp"
 #include "../headers/updaters/flatpak_updater.hpp"
 #include "../headers/updaters/lazy_neovim_updater.hpp"
+#include "../headers/updaters/ohmyzsh_updater.hpp"
 #include "../headers/updaters/pnpm_updater.hpp"
 #include "../headers/updaters/rustup_updater.hpp"
 #include "../headers/updaters/zypper_updater.hpp"
@@ -23,6 +24,9 @@ std::unique_ptr<Updater> UpdaterFactory::createUpdater(
             break;
         case RUSTUP:
             updater = std::unique_ptr<Updater>(new RustupUpdater());
+            break;
+        case OHMYZSH:
+            updater = std::unique_ptr<Updater>(new OhMyZshUpdater());
             break;
         case PNPM:
             updater = std::unique_ptr<Updater>(new PnpmUpdater());
