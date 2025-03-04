@@ -9,7 +9,6 @@ enum UpdatersNames {
     DUMMY,
     FLATPAK,
     LAZY_NEOVIM,
-    OHMYZSH,
     PNPM,
     RUSTUP,
     ZYPPPER,
