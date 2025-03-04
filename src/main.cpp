@@ -14,6 +14,15 @@ void runAllModules(UpdaterFactory updaterFactory) {
     }
 }
 
+void runAllModulesAutoConfirm(UpdaterFactory updaterFactory) {
+    std::unique_ptr<Updater> updater;
+    for (int value = DUMMY + 1; value != DUMMY_LAST; value++) {
+        UpdatersNames enumValue = static_cast<UpdatersNames>(value);
+        updater = updaterFactory.createUpdater(enumValue);
+        updater->autoConfirmUpdate();
+    }
+}
+
 void checkAvaliableUpdatesAllModules(UpdaterFactory updaterFactory) {
     std::unique_ptr<Updater> updater;
     for (int value = DUMMY + 1; value != DUMMY_LAST; value++) {
@@ -28,6 +37,8 @@ int main(int argc, char *argv[]) {
 
     if (argc > 1 && std::strcmp(argv[1], "--check") == 0) {
         checkAvaliableUpdatesAllModules(updaterFactory);
+    } else if (argc > 1 && std::strcmp(argv[1], "--auto-confirm") == 0) {
+        runAllModulesAutoConfirm(updaterFactory);
     } else {
         runAllModules(updaterFactory);
     }

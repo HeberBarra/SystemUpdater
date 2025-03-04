@@ -6,6 +6,7 @@
 class ZypperUpdater : public Updater {
  public:
     void update();
+    void autoConfirmUpdate();
     void checkAvaliableUpdates();
     ~ZypperUpdater() {}
 };

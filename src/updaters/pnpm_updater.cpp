@@ -7,6 +7,10 @@ void PnpmUpdater::update() {
     system("pnpm update");
 }
 
+void PnpmUpdater::autoConfirmUpdate() {
+    this->update();
+}
+
 void PnpmUpdater::checkAvaliableUpdates() {
     system("pnpm outdated");
 }

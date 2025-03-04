@@ -6,6 +6,7 @@
 class PnpmUpdater: public Updater {
  public:
     void update();
+    void autoConfirmUpdate();
     void checkAvaliableUpdates();
     ~PnpmUpdater() {}
 };
