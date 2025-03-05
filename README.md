@@ -8,8 +8,8 @@ A C++ Program for helping me update my system. Fell free to customize to your ow
 
 ## Planned features:
 
-- [ ] Auto Confirm
-- [x] Fetch updates
+- [x] Auto Confirm
+- [x] Fetch updates (Support depends on the package manager)
 - [ ] Module system
 
 ## License:
